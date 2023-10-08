@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient__3_"
+    tools:ignore="MissingDefaultResource">
+
+    <!-- Logo and 'Welcome to' text -->
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Welcome to"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/bird_logo" />
+
+    <TextView
+        android:id="@+id/usernameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="23dp"
+        android:text="Username:"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        style="@android:style/Widget.Holo.EditText"
+        android:layout_width="333dp"
+        android:layout_height="44dp"
+        android:layout_below="@id/usernameLabel"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/edit_background"
+        android:backgroundTintMode="screen"
+        android:hint="Enter your username"
+        android:labelFor="@id/usernameLabel"
+        android:outlineProvider="bounds"
+        android:overScrollMode="never"
+        android:singleLine="false" />
+
+    <TextView
+        android:id="@+id/passwordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameEditText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Password:"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <!-- Login Button -->
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="333dp"
+        android:layout_height="44dp"
+        android:layout_below="@id/passwordLabel"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_background"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:scrollbarSize="4dp" />
+
+    <!-- Create Account Button -->
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="169dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/passwordEditText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="38dp"
+        android:backgroundTint="#99AF17"
+        android:text="Log In" />
+
+    <!-- Social Media Login Buttons (Google and Facebook) -->
+
+
+    <Button
+        android:id="@+id/createAccountButton"
+        android:layout_width="220dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/loginButton"
+        android:layout_marginStart="95dp"
+        android:backgroundTint="#99AF17"
+        android:text="Create Account" />
+
+    <ImageButton
+        android:id="@+id/FacebookButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="640dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/facebook"
+        app:icon="@drawable/facebook"
+        tools:src="@drawable/facebook"
+        android:background="#00FFFFFF"/>
+
+    <ImageButton
+        android:id="@+id/GoogleButton"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="209dp"
+        android:layout_marginTop="640dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitStart"
+        android:src="@drawable/google"
+        app:icon="@drawable/google"
+        tools:src="@drawable/google" />
+
+</RelativeLayout>
